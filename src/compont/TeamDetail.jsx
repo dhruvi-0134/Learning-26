@@ -6,7 +6,7 @@ export const TeamDetail = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Playing {name} ......</h1>
+      <h1>Playing {decodeURIComponent(name)} ......</h1>
     </div>
   );
 };

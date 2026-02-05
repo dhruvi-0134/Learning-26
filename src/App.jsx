@@ -27,7 +27,7 @@ function App() {
         <Route path="/netflixseries" element={<Netflixseries />} />
         <Route path="/watch/:name" element={<Watch />} />
 
-        {/* ✅ TEAM ROUTES */}
+        {/* TEAM ROUTES */}
         <Route path="/team" element={<Team />} />
         <Route path="/team/:name" element={<TeamDetail />} />
 
