@@ -1,6 +1,6 @@
 import React from 'react'
 import "../assets/css/portfoli.css"
-
+import"../assets/images/virat_kohli.jpg"
 export const PortfolioComponent = () => {
   return (
     <div className="portfolio">

@@ -1,28 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import veer from "../assets/images/Veer.jpg";
+import uri from "../assets/images/Uri.jpg";
+import don from "../assets/images/Don.jpg";
+import pk from "../assets/images/Pk.jpg";
+import jab from "../assets/images/Jab.jpg";
+
 export const Netflixmovie = () => {
   const movies = [
-    { movieId: 1, movieName: "Veer-Zaara" },
-    { movieId: 2, movieName: "URI" },
-    { movieId: 3, movieName: "Don" },
-    { movieId: 4, movieName: "PK" },
-    { movieId: 5, movieName: "Jab we Met" },
+    { id: 1, name: "Veer-Zaara", image: veer, slug: "veer" },
+    { id: 2, name: "URI", image: uri, slug: "uri" },
+    { id: 3, name: "Don", image: don, slug: "don" },
+    { id: 4, name: "PK", image: pk, slug: "pk" },
+    { id: 5, name: "Jab We Met", image: jab, slug: "jab" },
   ];
 
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Netflix Movies</h1>
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
+      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}>
         {movies.map((movie) => (
-          <li key={movie.movieId}>
-            <Link to={`/watch/${movie.movieName}`}>
-              {movie.movieName}
+          <div key={movie.id} style={{ margin: "20px" }}>
+            <Link to={`/watch/${movie.slug}`}>
+              <img
+                src={movie.image}
+                alt={movie.name}
+                style={{
+                  width: "200px",
+                  height: "300px",
+                  borderRadius: "10px",
+                  cursor: "pointer",
+                }}
+              />
             </Link>
-          </li>
+            <h3>{movie.name}</h3>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
