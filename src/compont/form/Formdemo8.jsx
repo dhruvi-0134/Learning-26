@@ -9,6 +9,7 @@ export const Formdemo8 = () => {
     const hasCapitalLetter = /[A-Z]/.test(password);
     const hasnumber =/[0-9]/.test(password);
     const hasSpecialchar = /[!@#$%^*]/.test(password);
+    
     const validationSchema = {
         nameValidator:{
             required:{
@@ -94,6 +95,7 @@ export const Formdemo8 = () => {
     <div style={{textAlign:"center"}}>
         <h1>Student Registration Form</h1>
         <form  onSubmit={handleSubmit(submitHandler)}>
+            
             <div>
                 <label>NAME:</label>
                 <input type="text"{...register("name",validationSchema.nameValidator)}></input>

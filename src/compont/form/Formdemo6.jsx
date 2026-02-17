@@ -47,7 +47,7 @@ export const Formdemo6 = () => {
     };
 
     return (
-        <div>
+        <div style={{textAlign:"center"}}>
             <h1>Formdemo6</h1>
 
             <form onSubmit={handleSubmit(submitHandler)}>

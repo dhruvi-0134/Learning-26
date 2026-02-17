@@ -30,6 +30,8 @@ import { Formdemo5 } from "./compont/form/Formdemo5";
 import { Formdemo6 } from "./compont/form/Formdemo6";
 import { Formdemo7 } from "./compont/form/Formdemo7";
 import { Formdemo8 } from "./compont/form/Formdemo8";
+import { ApiDemo1 } from "./compont/api/ApiDemo1";
+import { ApiDemo2 } from "./compont/api/ApiDemo2";
 
 function App() {
   return (
@@ -65,6 +67,8 @@ function App() {
         <Route path="/formdemo6"element={<Formdemo6/>}></Route>
         <Route path="/formdemo7"element={<Formdemo7/>}></Route>
         <Route path="/formdemo8"element={<Formdemo8/>}></Route>
+        <Route path="/apidemo1"element={<ApiDemo1/>}></Route>
+        <Route path="/apidemo2"element={<ApiDemo2/>}></Route>
       </Routes>
     </>
   );
