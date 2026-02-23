@@ -36,6 +36,8 @@ import { ApiDemo3 } from "./compont/api/ApiDemo3";
 import { ApiDemo4 } from "./compont/api/ApiDemo4";
 import { MovieDetail } from "./compont/api/MovieDetail";
 import { ApiDemo5 } from "./compont/api/ApiDemo5";
+import { ApipostDemo1 } from "./compont/api/ApipostDemo1";
+import { ApipostDemo2 } from "./compont/api/ApipostDemo2";
 
 function App() {
   return (
@@ -77,6 +79,8 @@ function App() {
         <Route path="/apidemo4"element={<ApiDemo4/>}></Route>
         <Route path="/moviedetail/:id"element={<MovieDetail/>}></Route>
         <Route path="/apidemo5"element={<ApiDemo5/>}></Route>
+        <Route path="/apidemo6"element={<ApipostDemo1/>}></Route>
+       <Route path="/apidemo7"element={<ApipostDemo2/>}></Route>
       </Routes>
     </>
   );
